@@ -1,0 +1,8 @@
+assignment,priority,complexity,workload
+ai_project,6,8,6
+ai_paper,6,6,4
+ai_reviews,1,2,2
+pa_study,5,8,13
+ma_study,4,8,10
+il_project,3,5,4
+test,7,5,10

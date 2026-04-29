@@ -1,0 +1,17 @@
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\bin\Debug\net6.0\schedule.txt
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\bin\Debug\net6.0\00 Exam Project.exe
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\bin\Debug\net6.0\00 Exam Project.deps.json
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\bin\Debug\net6.0\00 Exam Project.runtimeconfig.json
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\bin\Debug\net6.0\00 Exam Project.dll
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\bin\Debug\net6.0\00 Exam Project.pdb
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\obj\Debug\net6.0\00 Exam Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\obj\Debug\net6.0\00 Exam Project.AssemblyInfoInputs.cache
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\obj\Debug\net6.0\00 Exam Project.AssemblyInfo.cs
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\obj\Debug\net6.0\00 Exam Project.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\obj\Debug\net6.0\00 Exam Project.dll
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\obj\Debug\net6.0\refint\00 Exam Project.dll
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\obj\Debug\net6.0\00 Exam Project.pdb
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\obj\Debug\net6.0\00 Exam Project.genruntimeconfig.cache
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\obj\Debug\net6.0\ref\00 Exam Project.dll
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\bin\Debug\net6.0\assignments.txt
+C:\Users\user\OneDrive - Thomas More\Bachelor Degree\FOURTH YEAR\1st Semester\Artificial Intelligence\00 Exam Project\bin\Debug\net6.0\training_data.txt

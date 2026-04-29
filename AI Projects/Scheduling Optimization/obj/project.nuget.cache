@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "842IxVpIl6O1x61GClf6ilEgxhUCjdlgTZNqKFYrWAx74eRa1jC98prFX9ud+PBeXxyN5omWzgr1PHXwlk4GAw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marag\\OneDrive\\Documents\\00 Home\\Martha\\School\\Bachelor Degree\\Artificial Intelligence\\00 Exam Project\\00 Exam Project.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marag\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\marag\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\marag\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\marag\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}

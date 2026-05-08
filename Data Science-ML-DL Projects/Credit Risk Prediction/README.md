@@ -97,4 +97,4 @@ The final model should be capable of identifying loans with a higher probability
 Martha Geoffrey Kabakaki
 
 ## References 
-- [LendingClub Wikipedia Page](https://en.wikipedia.org/wiki/LendingClub)
+[LendingClub Wikipedia Page](https://en.wikipedia.org/wiki/LendingClub)

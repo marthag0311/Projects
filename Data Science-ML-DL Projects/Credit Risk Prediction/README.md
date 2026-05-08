@@ -1,4 +1,4 @@
-The Jupyter Notebook file, Loan Deault, is too big to be diplayed. I would suggest you download it and open it in Visual Studio Code (VSC).
+The Jupyter Notebook file, Loan Deault Notebook, is too big to be diplayed. I would suggest you download it and open it in Visual Studio Code (VSC).
 
 # LendingClub Credit Risk Prediction
 

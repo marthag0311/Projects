@@ -86,7 +86,7 @@ The final submission should include:
 The final model should be capable of identifying loans with a higher probability of default before approval, enabling better lending decisions and improved risk management strategies.
 
 ## Repository Structure 
-├── Loan Default.ipynb  
+├── Loan Default Notebook.ipynb  
 ├── lendingClub_data => train_data  
 ├── test_set.txt  
 ├── test_set_result  

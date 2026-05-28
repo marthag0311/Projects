@@ -1,8 +1,8 @@
 -- Create the 'Database' database
-CREATE DATABASE LweruBeachesDatabase;
+CREATE DATABASE database;
 GO
 
-USE LweruBeachesDatabase;
+USE database;
 GO
 
 -- ======================================================

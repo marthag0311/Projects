@@ -9,7 +9,7 @@ The Gold Layer is the business-level data representation, structured to support 
 
 
 | Column Name       | Data Type    | Description |
-| ----------------- | ------------ |             |
+| :---------------- | :----------- | :---------- |
 | employee_key      | INT          |             | 
 | employee_name     | NVARCHAR(50) |             |
 | employee_position | NVARCHAR(50) |             |
@@ -20,23 +20,23 @@ The Gold Layer is the business-level data representation, structured to support 
 ### 2. gold.dim_date
 - Purpose: Stores date details
 - Columns:
-| Column Name  | Data Type    | Description |
-| ------------ | ------------ |             |
-| date_key     | INT          |             | 
-| date         | DATE |             |
-| year         | YEAR |             |
-| month        | MONTH |             |
-| month_name   | MONTH NAME |             |
-| quarter      | QUARTER      |             |
-| day_of_month | DAY OF MONTH |             |
-| weekday_name | WEEKDAY NAME(20) |             |
-| day_type     | WEEKDAY (20) |             |
+| Column Name  | Data Type | Description |
+| :----------- | :-------  | :---------- |
+| date_key     | INT       |             | 
+| date         | DATE      |             |
+| year         | INT       |             |
+| month        | INT       |             |
+| month_name   | NVARCHAR  |             |
+| quarter      | INT       |             |
+| day_of_month | INT       |             |
+| weekday_name | NVARCHAR  |             |
+| day_type     | NVARCHAR  |             |
 
 ### 2. gold.fact_expenses
 - Purpose: Stores expense data for analytical purposes
 - Columns:
 | Column Name      | Data Type      | Description |
-| ---------------- | -------------- |             |
+| :--------------- | :------------- | :---------- |
 | expense_key      | INT            |             | 
 | expense_date     | DATE           |             |
 | expense_type     | NVARCHAR(50)   |             |
@@ -47,7 +47,7 @@ The Gold Layer is the business-level data representation, structured to support 
 - Purpose: Stores salary data for analytical purposes
 - Columns:
 | Column Name  | Data Type      | Description |
-| ------------ | -------------- |             |
+| :----------- | :------------- | :---------- |
 | salary_key   | INT            |             |
 | employee_key | INT            |             |
 | salary_date  | DATE           |             |
@@ -56,8 +56,8 @@ The Gold Layer is the business-level data representation, structured to support 
 ### 2. gold.fact_sales
 - Purpose: Stores transactional sales data for analytical purposes
 - Columns: 
-| Column Name      | Data Type  | Description |
-| ---------------- | ---------- |             |
+| Column Name  | Data Type      | Description |
+| :----------- | :------------- | :---------- |
 | sale_key     | INT            |             |
 | employee_key | INT            |             | 
 | sale_date    | DATE           |             |

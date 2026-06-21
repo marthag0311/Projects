@@ -44,8 +44,8 @@ BEGIN
 			employee_key,
 			ISNULL(TRIM(employee), 'N/A') AS employee, -- Remove unwanted spaces to ensure data consistency and uniformity across all records.
 			ISNULL(TRIM(employee_position), 'N/A') AS employee_position,
-			COALESCE(CAST(employee_phone1 AS VARCHAR(20)), 'N/A') AS employee_phone1,
-			COALESCE(CAST(employee_phone2 AS VARCHAR(20)), 'N/A') AS employee_phone2,
+			COALESCE(employee_phone1, 'N/A') AS employee_phone1,
+			COALESCE(employee_phone2, 'N/A') AS employee_phone2,
 			ISNULL(employee_gender, 'N/A') AS employee_gender
 		FROM bronze.employees  
 		SET @end_time = GETDATE();
@@ -60,15 +60,15 @@ BEGIN
 		INSERT INTO silver.expenses (
 			expense_key,
 			expense_date,
-			expense_type,
 			expense_category,
+			expense_description,
 			expense_amount
 		)
 		SELECT 
 			expense_key,
 			expense_date, 
-			ISNULL(TRIM(expense_type), 'N/A') AS expense_type,
-			ISNULL(TRIM(expense_category), 'N/A') AS expense_category, 
+			ISNULL(TRIM(expense_category), 'N/A') AS expense_category,
+			ISNULL(TRIM(expense_description), 'N/A') AS expense_description, 
 			ISNULL(expense_amount, 0) AS expense_amount
 		FROM bronze.expenses
 		SET @end_time = GETDATE();
@@ -90,7 +90,7 @@ BEGIN
 			salary_key,
 			salary_date,
 			employee_key,
-			salary
+			ISNULL(salary, 0) AS salary
 		FROM bronze.salaries
 		SET @end_time = GETDATE();
 		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
@@ -112,7 +112,7 @@ BEGIN
 			sale_key,
 			sale_date, 
 			ISNULL(TRIM(sale_service), 'N/A') AS sale_service,
-			sales,
+			ISNULL(sales, 0) AS sales,
 			employee_key
 		FROM bronze.sales
 		SET @end_time = GETDATE();

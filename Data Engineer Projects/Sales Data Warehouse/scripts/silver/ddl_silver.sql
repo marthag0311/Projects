@@ -26,7 +26,7 @@ IF OBJECT_ID ('silver.salaries', 'U') IS NOT NULL
 CREATE TABLE silver.salaries (
 [salary_key] INT,
 [salary_date] DATE,
-[employee_key] NVARCHAR(50), 
+[employee_key] INT, 
 [salary] DECIMAL(10,2),
 [dwh_create_date] DATETIME2 DEFAULT GETDATE()
 );
@@ -36,8 +36,8 @@ IF OBJECT_ID ('silver.expenses', 'U') IS NOT NULL
 CREATE TABLE silver.expenses (
 [expense_key] INT,
 [expense_date] DATE,
-[expense_type] NVARCHAR(50), 
 [expense_category] NVARCHAR(50), 
+[expense_description] NVARCHAR(50), 
 [expense_amount] DECIMAL(10,2),
 [dwh_create_date] DATETIME2 DEFAULT GETDATE()
 );
@@ -49,6 +49,6 @@ CREATE TABLE silver.sales (
 [sale_date] DATE,
 [sale_service] NVARCHAR(200), 
 [sales] DECIMAL(10,2),
-[employee_key] NVARCHAR(50),
+[employee_key] INT,
 [dwh_create_date] DATETIME2 DEFAULT GETDATE()
 );

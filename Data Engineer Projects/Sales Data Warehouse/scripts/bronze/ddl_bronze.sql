@@ -25,7 +25,7 @@ IF OBJECT_ID ('bronze.salaries', 'U') IS NOT NULL
 CREATE TABLE bronze.salaries (
 [salary_key] INT,
 [salary_date] DATE,
-[employee_key] NVARCHAR(50), 
+[employee_key] INT, 
 [salary] DECIMAL(10,2)
 );
 
@@ -34,8 +34,8 @@ IF OBJECT_ID ('bronze.expenses', 'U') IS NOT NULL
 CREATE TABLE bronze.expenses (
 [expense_key] INT,
 [expense_date] DATE,
-[expense_type] NVARCHAR(50), 
 [expense_category] NVARCHAR(50), 
+[expense_description] NVARCHAR(50), 
 [expense_amount] DECIMAL(10,2)
 );
 
@@ -46,5 +46,5 @@ CREATE TABLE bronze.sales (
 [sale_date] DATE,
 [sale_service] NVARCHAR(200), 
 [sales] DECIMAL(10,2),
-[employee_key] NVARCHAR(50)
+[employee_key] INT
 );

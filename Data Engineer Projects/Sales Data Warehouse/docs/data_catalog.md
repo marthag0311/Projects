@@ -10,7 +10,7 @@ The Gold Layer is the business-level data representation, structured to support 
 
 | Column Name       | Data Type    | Description |
 | :---------------- | :----------- | :---------- |
-| employee_key      | INT          |             | 
+| employee_key      | INT          | Surrogate key uniquely identifying eache employee record in the dimesion table            | 
 | employee_name     | NVARCHAR(50) |             |
 | employee_position | NVARCHAR(50) |             |
 | employee_phone1   | NVARCHAR(20) |             |

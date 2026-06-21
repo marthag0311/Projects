@@ -5,7 +5,9 @@ The Gold Layer is the business-level data representation, structured to support 
 
 ### 1. gold.dim_employees
 - Purpose: Stores employee details
-- Columns: 
+- Columns:
+
+
 | Column Name       | Data Type    | Description |
 | ----------------- | ------------ |             |
 | employee_key      | INT          |             | 

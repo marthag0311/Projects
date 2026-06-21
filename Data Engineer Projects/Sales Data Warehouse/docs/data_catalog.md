@@ -17,9 +17,12 @@ The Gold Layer is the business-level data representation, structured to support 
 | employee_phone2   | NVARCHAR(20) |             |
 | employee_gender   | NVARCHAR(20) |             |
 
+
 ### 2. gold.dim_date
 - Purpose: Stores date details
 - Columns:
+
+
 | Column Name  | Data Type | Description |
 | :----------- | :-------  | :---------- |
 | date_key     | INT       |             | 
@@ -32,9 +35,12 @@ The Gold Layer is the business-level data representation, structured to support 
 | weekday_name | NVARCHAR  |             |
 | day_type     | NVARCHAR  |             |
 
+
 ### 2. gold.fact_expenses
 - Purpose: Stores expense data for analytical purposes
 - Columns:
+
+
 | Column Name      | Data Type      | Description |
 | :--------------- | :------------- | :---------- |
 | expense_key      | INT            |             | 
@@ -43,9 +49,12 @@ The Gold Layer is the business-level data representation, structured to support 
 | expense_category | NVARCHAR(50)   |             |
 | expense_amount   | DECIMAL(10, 2) |             |
 
+
 ### 2. gold.fact_salaries
 - Purpose: Stores salary data for analytical purposes
 - Columns:
+
+
 | Column Name  | Data Type      | Description |
 | :----------- | :------------- | :---------- |
 | salary_key   | INT            |             |
@@ -53,9 +62,12 @@ The Gold Layer is the business-level data representation, structured to support 
 | salary_date  | DATE           |             |
 | salary       | DECIMAL(10, 2) |             |
 
+
 ### 2. gold.fact_sales
 - Purpose: Stores transactional sales data for analytical purposes
-- Columns: 
+- Columns:
+
+
 | Column Name  | Data Type      | Description |
 | :----------- | :------------- | :---------- |
 | sale_key     | INT            |             |
@@ -63,3 +75,4 @@ The Gold Layer is the business-level data representation, structured to support 
 | sale_date    | DATE           |             |
 | sale_service | NVARCHAR(200)  |             |
 | sales        | DECIMAL(10, 2) |             |
+

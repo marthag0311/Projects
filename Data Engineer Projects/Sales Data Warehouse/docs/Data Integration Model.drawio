@@ -1,11 +1,11 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
   <diagram name="Page-1" id="yesb9Ajl9EgczFZegCkH">
-    <mxGraphModel dx="910" dy="1255" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1059" dy="681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="qRuZbngeIj_GFzKg-JjX-1" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Integration Model&lt;/b&gt;&lt;/font&gt; (how tables are related)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="40" y="50" width="340" height="30" as="geometry" />
+        <mxCell id="qRuZbngeIj_GFzKg-JjX-1" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Data Integration Model&lt;/b&gt;&lt;/font&gt; (how tables are related)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="357.5" y="50" width="400" height="30" as="geometry" />
         </mxCell>
         <mxCell id="qRuZbngeIj_GFzKg-JjX-2" value="sales" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=20;" parent="1" vertex="1">
           <mxGeometry x="457.5" y="350" width="200" height="150" as="geometry" />

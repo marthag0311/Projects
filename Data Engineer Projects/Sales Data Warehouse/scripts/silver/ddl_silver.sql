@@ -21,13 +21,13 @@ CREATE TABLE silver.employees (
 [dwh_create_date] DATETIME2 DEFAULT GETDATE()
 );
 
-IF OBJECT_ID ('silver.salaries', 'U') IS NOT NULL
-	DROP TABLE silver.salaries;
-CREATE TABLE silver.salaries (
-[salary_key] INT,
-[salary_date] DATE,
+IF OBJECT_ID ('silver.wages', 'U') IS NOT NULL
+	DROP TABLE silver.wages;
+CREATE TABLE silver.wages (
+[wage_key] INT,
+[wage_date] DATE,
 [employee_key] INT, 
-[salary] DECIMAL(10,2),
+[wage] DECIMAL(10,2),
 [dwh_create_date] DATETIME2 DEFAULT GETDATE()
 );
 
@@ -37,7 +37,8 @@ CREATE TABLE silver.expenses (
 [expense_key] INT,
 [expense_date] DATE,
 [expense_category] NVARCHAR(50), 
-[expense_description] NVARCHAR(50), 
+[expense_subcategory] NVARCHAR(50), 
+[expense_name] NVARCHAR(50), 
 [expense_amount] DECIMAL(10,2),
 [dwh_create_date] DATETIME2 DEFAULT GETDATE()
 );
@@ -51,4 +52,11 @@ CREATE TABLE silver.sales (
 [sales] DECIMAL(10,2),
 [employee_key] INT,
 [dwh_create_date] DATETIME2 DEFAULT GETDATE()
+);
+
+IF OBJECT_ID ('silver.mapping', 'U') IS NOT NULL
+	DROP TABLE silver.mapping;
+CREATE TABLE silver.mapping (
+old_value VARCHAR(100) PRIMARY KEY,
+new_value VARCHAR(100) NOT NULL
 );

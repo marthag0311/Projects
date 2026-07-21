@@ -29,10 +29,10 @@ BEGIN
 		-- Loading bronze.employees
 		SET @start_time = GETDATE();
 		PRINT '>> Truncating Table: bronze.employees';
-		TRUNCATE TABLE bronze.employees;
+		TRUNCATE TABLE bronze.employees; 
 		PRINT '>> Inserting Data Into: bronze.employees';
 		BULK INSERT bronze.employees
-		FROM 'C:\Users\marag\OneDrive\Documents\Home\Martha\Work\Data Engineer Projects\Sales Data Warehouse\employees.csv'
+		FROM 'C:\Users\marag\OneDrive\Documents\Home\Martha\Work\Data Engineer Projects\Sales Data Warehouse\data\employees.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -41,14 +41,14 @@ BEGIN
 		SET @end_time = GETDATE();
 		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
 		PRINT '>> -----------------------------------------------';
-
+		
 		-- Loading bronze.expenses
 		SET @start_time = GETDATE();
 		PRINT '>> Truncating Table: bronze.expenses';
 		TRUNCATE TABLE bronze.expenses;
 		PRINT '>> Inserting Data Into: bronze.expenses';
 		BULK INSERT bronze.expenses
-		FROM 'C:\Users\marag\OneDrive\Documents\Home\Martha\Work\Data Engineer Projects\Sales Data Warehouse\expenses.csv'
+		FROM 'C:\Users\marag\OneDrive\Documents\Home\Martha\Work\Data Engineer Projects\Sales Data Warehouse\data\expenses.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -58,13 +58,13 @@ BEGIN
 		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
 		PRINT '>> -----------------------------------------------';
 
-		-- Loading bronze.salaries
+		-- Loading bronze.wages
 		SET @start_time = GETDATE();
-		PRINT '>> Truncating Table: bronze.salaries';
-		TRUNCATE TABLE bronze.salaries;
-		PRINT '>> Inserting Data Into: bronze.salaries';
-		BULK INSERT bronze.salaries
-		FROM 'C:\Users\marag\OneDrive\Documents\Home\Martha\Work\Data Engineer Projects\Sales Data Warehouse\salaries.csv'
+		PRINT '>> Truncating Table: bronze.wages'; 
+		TRUNCATE TABLE bronze.wages;
+		PRINT '>> Inserting Data Into: bronze.wages';
+		BULK INSERT bronze.wages
+		FROM 'C:\Users\marag\OneDrive\Documents\Home\Martha\Work\Data Engineer Projects\Sales Data Warehouse\data\wages.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -80,7 +80,7 @@ BEGIN
 		TRUNCATE TABLE bronze.sales;
 		PRINT '>> Inserting Data Into: bronze.sales';
 		BULK INSERT bronze.sales
-		FROM 'C:\Users\marag\OneDrive\Documents\Home\Martha\Work\Data Engineer Projects\Sales Data Warehouse\sales.csv'
+		FROM 'C:\Users\marag\OneDrive\Documents\Home\Martha\Work\Data Engineer Projects\Sales Data Warehouse\data\sales.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',

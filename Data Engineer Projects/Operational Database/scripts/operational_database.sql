@@ -376,8 +376,6 @@ CREATE TABLE [OrderLines] (
         REFERENCES [Orders](OrderID),
     CONSTRAINT [FK_Orders_Products] FOREIGN KEY (ProductID)
         REFERENCES [Products](ProductID),
-    CONSTRAINT [FK_Orders_UOM] FOREIGN KEY ([UomID])
-        REFERENCES [UOM]([UomID]),
     CONSTRAINT [FK_Orders_ProductPrice] FOREIGN KEY ([ProductPriceID])
         REFERENCES [ProductPrice]([ProductPriceID])
 );

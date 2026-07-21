@@ -50,17 +50,17 @@ The Gold Layer is the business-level data representation, structured to support 
 | expense_amount      | DECIMAL(10, 2) | The value of the expense                                                          |
 
 
-### 2. gold.fact_salaries
-- Purpose: Stores salary data for analytical purposes
+### 2. gold.fact_wages
+- Purpose: Stores wage data for analytical purposes
 - Columns:
 
 
 | Column Name   | Data Type      | Description                                                                     |
 | :------------ | :------------- | :------------------------------------------------------------------------------ |
-| salary_key    | INT            | Surrogate key uniquely identifying each salary record in the salary fact table. |
+| wage_key      | INT            | Surrogate key uniquely identifying each salary record in the salary fact table. |
 | employee_key  | INT            | Surrogate key linking salary to the employee dimension table.                   |
-| salary_date   | DATE           | The date when the salary was given to the employee.                             |
-| salary_amount | DECIMAL(10, 2) | The value of the salary.                                                        |
+| wage_date     | DATE           | The date when the salary was given to the employee.                             |
+| wage_amount   | DECIMAL(10, 2) | The value of the salary.                                                        |
 
 
 ### 2. gold.fact_sales
@@ -70,7 +70,7 @@ The Gold Layer is the business-level data representation, structured to support 
 
 | Column Name  | Data Type      | Description                                                                 |
 | :----------- | :------------- | :-------------------------------------------------------------------------- |
-| order_key     | INT            | Surrogate key uniquely identifying each sle record in the sala fact table. |
+| order_key    | INT            | Surrogate key uniquely identifying each sle record in the sala fact table. |
 | employee_key | INT            | Surrogate key linking the order to the.                                     | 
 | order_date   | DATE           | The date when the order was placed.                                         |
 | service      | NVARCHAR(200)  | The service that was given.                                                 |

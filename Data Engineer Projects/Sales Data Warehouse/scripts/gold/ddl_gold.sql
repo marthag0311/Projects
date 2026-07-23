@@ -20,7 +20,7 @@ Usage:
 IF OBJECT_ID('gold.dim_date', 'V') IS NOT NULL
     DROP VIEW gold.dim_date;
 GO
-
+select * from gold.dim_date
 CREATE VIEW gold.dim_date AS
 WITH date_range AS
 (
@@ -78,7 +78,7 @@ FROM silver.employees
 GO
 
 -- =============================================================================
--- Create Dimension: gold.dim_service
+-- Create Dimension: gold.dim_services
 -- =============================================================================
 IF OBJECT_ID('gold.dim_services', 'V') IS NOT NULL
     DROP VIEW gold.dim_services;
@@ -95,13 +95,13 @@ FROM (
 GO 
 
 -- =============================================================================
--- Create Dimension: gold.dim_service_category
+-- Create Dimension: gold.dim_ser_cats
 -- =============================================================================
-IF OBJECT_ID('gold.dim_service_category', 'V') IS NOT NULL
-    DROP VIEW gold.dim_service_category;
+IF OBJECT_ID('gold.dim_ser_cats', 'V') IS NOT NULL
+    DROP VIEW gold.dim_ser_cats;
 GO
 
-CREATE VIEW gold.dim_service_category AS
+CREATE VIEW gold.dim_ser_cats AS
 WITH split_categories AS (
     SELECT
         LEFT(
@@ -122,13 +122,13 @@ GROUP BY category_name
 GO
 
 -- =============================================================================
--- Create Dimension: gold.brdige_service_category
+-- Create Dimension: gold.bridge_ser_cat
 -- =============================================================================
-IF OBJECT_ID('gold.bridge_service_category', 'V') IS NOT NULL
-    DROP VIEW gold.bridge_service_category;
+IF OBJECT_ID('gold.bridge_ser_cat', 'V') IS NOT NULL
+    DROP VIEW gold.bridge_ser_cat;
 GO
 
-CREATE VIEW gold.bridge_service_category AS
+CREATE VIEW gold.bridge_ser_cat AS
 SELECT
     s.service_key,
     c.category_key
@@ -136,7 +136,7 @@ FROM gold.dim_services AS s
 CROSS APPLY STRING_SPLIT( -- STRING_SPLIT() creates a temporary table with a column called value.
     REPLACE(s.[service_name], ' na ', '|'), 
     '|') AS x
-JOIN gold.dim_service_category c
+JOIN gold.dim_ser_cats c 
     ON c.category_name = 
         LEFT(
             TRIM(x.value),

@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
   <diagram name="Page-1" id="NiZYnaYx8Gov8VBV9_cf">
-    <mxGraphModel dx="836" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1034" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -107,13 +107,7 @@
           <mxGeometry x="610" y="90" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wUVO8Yt1folFWY4WZdv6-69" value="&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Data Architecture Layers&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="60" y="50" width="285.89" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="X8LUr_3qBkuIr8yZkSUe-1" value="By: &lt;b&gt;Martha Geoffrey Kabakaki &lt;/b&gt;(LinkedIn &amp;amp; GitHub)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="490" y="60" width="290" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="X8LUr_3qBkuIr8yZkSUe-2" value="Specification" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="90" width="120" height="30" as="geometry" />
+          <mxGeometry x="184.11" y="40" width="430" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

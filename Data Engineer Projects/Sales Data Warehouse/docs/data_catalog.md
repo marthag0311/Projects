@@ -3,7 +3,7 @@
 ## Overview
 The Gold Layer is the business-level data representation, structured to support analytical and reporting use cases. It consists of dimension tables and fact tables for specific business metrics.
 
-### 2. gold.dim_date
+### 1. gold.dim_date
 - Purpose: Stores date details
 - Columns:
 
@@ -21,7 +21,7 @@ The Gold Layer is the business-level data representation, structured to support 
 | day_type     | NVARCHAR  | The day type of the date.                                                        |
 
 
-### 1. gold.dim_employees
+### 2. gold.dim_employees
 - Purpose: Stores employee details
 - Columns:
 
@@ -36,7 +36,7 @@ The Gold Layer is the business-level data representation, structured to support 
 | employee_gender   | NVARCHAR(20) | The employee's gender.                                                                    |
 
 
-### 2. gold.dim_services
+### 3. gold.dim_services
 - Purpose: Stores service details
 - Columns:
 
@@ -47,19 +47,19 @@ The Gold Layer is the business-level data representation, structured to support 
 | service_name        | NVARCHAR(200) | The service name.                                                                       |
 
 
-### 2. gold.dim_ser_cats
+### 4. gold.dim_ser_cats
 - Purpose: Stores service categories details
 - Columns:
 
 
-| Column Name     | Data Type     | Description                                                                                          |
-| :-------------- | :-----------  | :--------------------------------------------------------------------------------------------------- |
-| category_key    | INT           | Surrogate key uniquely identifying each service category record in the service categories dimension table.  | 
-| category_name   | NVARCHAR(200) | The category name.                                                                       |    
+| Column Name     | Data Type     | Description                                                                                                |
+| :-------------- | :-----------  | :--------------------------------------------------------------------------------------------------------- |
+| category_key    | INT           | Surrogate key uniquely identifying each service category record in the service categories dimension table. | 
+| category_name   | NVARCHAR(200) | The category name.                                                                                         |    
 
 
-### 2. gold.bridge_ser_cat
-- Purpose: Stores service details
+### 5. gold.bridge_ser_cat
+- Purpose: Stores the associations between services and service categories.
 - Columns:
 
 
@@ -69,7 +69,7 @@ The Gold Layer is the business-level data representation, structured to support 
 | category key        | INT       | Surrogate key linking the category to the service. |
 
 
-### 2. gold.dim_expenses
+### 6. gold.dim_expenses
 - Purpose: Stores expense details
 - Columns:
 
@@ -82,7 +82,7 @@ The Gold Layer is the business-level data representation, structured to support 
 | expense_subcategory | NVARCHAR(50)  | The expense subcategory                                                                |
 
 
-### 2. gold.fact_expenses
+### 7. gold.fact_expenses
 - Purpose: Stores expense data for analytical purposes
 - Columns:
 
@@ -90,34 +90,34 @@ The Gold Layer is the business-level data representation, structured to support 
 | Column Name     | Data Type      | Description                                                                       |
 | :-------------- | :------------- | :-------------------------------------------------------------------------------- |
 | expense_key     | INT            | Surrogate key uniquely identifying each expense record in the expense fact table. | 
-| date_key        | DATE           | The date when the expense was incurred.                                           |
-| exp_key         | INT            | The category of the expense.                                                      |
+| date_key        | DATE           | Surrogate key linking the expense to the date when the expense was incurred.      | 
+| exp_key         | INT            | Surrogate key linking the expense to the expense dimension table.                 |                               
 | expense_amount  | DECIMAL(10, 2) | The value of the expense                                                          |
 
 
-### 2. gold.fact_wages
+### 8. gold.fact_wages
 - Purpose: Stores wage data for analytical purposes
 - Columns:
 
 
-| Column Name   | Data Type      | Description                                                                     |
-| :------------ | :------------- | :------------------------------------------------------------------------------ |
-| wage_key      | INT            | Surrogate key uniquely identifying each salary record in the salary fact table. |
-| employee_key  | INT            | Surrogate key linking the salary to the employee in the employee dimension table.               |
-| wage_date     | DATE           | The date when the salary was given to the employee.                             |
-| wage_amount   | DECIMAL(10, 2) | The value of the salary.                                                        |
+| Column Name   | Data Type      | Description                                                                         |
+| :------------ | :------------- | :---------------------------------------------------------------------------------- |
+| wage_key      | INT            | Surrogate key uniquely identifying each salary record in the salary fact table.     |
+| employee_key  | INT            | Surrogate key linking the salary to the employee dimension table.                   |
+| date_key      | DATE           | Surrogate key linking the wage to the date when the wage was given to the employee. |
+| wage_amount   | DECIMAL(10, 2) | The value of the salary.                                                            |
 
 
-### 2. gold.fact_sales
+### 9. gold.fact_sales
 - Purpose: Stores transactional sales data for analytical purposes
 - Columns:
 
 
-| Column Name  | Data Type      | Description                                                                |
-| :----------- | :------------- | :----------------------------------------------------------------------- - |
-| order_key    | INT            | Surrogate key uniquely identifying each sle record in the sala fact table. |
-| employee_key | INT            | Surrogate key linking the order to the employee in the employee dimension table.                           | 
-| date_key     | INT            | Surrogate key linking the order to the date when the order was placed.     |
-| service_key  | INT            | Surrogate key linking the order to the service that was given.             |
-| sales_amount | DECIMAL(10, 2) | The total monetary value of the sale.                                      |
+| Column Name  | Data Type      | Description                                                                      |
+| :----------- | :------------- | :------------------------------------------------------------------------------- |
+| order_key    | INT            | Surrogate key uniquely identifying each sale record in the sala fact table.      |
+| employee_key | INT            | Surrogate key linking the order to the employee dimension table.                 | 
+| date_key     | INT            | Surrogate key linking the order to the date when the order was placed.           |
+| service_key  | INT            | Surrogate key linking the order to the service that was given.                   |
+| sales_amount | DECIMAL(10, 2) | The total monetary value of the sale.                                            |
 

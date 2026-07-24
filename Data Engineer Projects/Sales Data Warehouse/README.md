@@ -49,11 +49,8 @@ For more details, refer to [Advanced SQL Sales Analysis](https://github.com/mart
 
 ## Repository Structure
 data-warehouse-project/
-
 │
-
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
-
 │
 ├── docs/                               # Project documentation and architecture details
 │   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL

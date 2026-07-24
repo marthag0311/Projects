@@ -1,64 +1,72 @@
-# Data Warehouse and Analytics Project
+# Naming Conventions
 
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights.
+This document outlines the naming conventions used for schemas, tables, views, columns, and other objects in the data warehouse.
 
-## Project Overview
+## General Principles
 
-This project involves: 
-1. Data Architecture: Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
-2. ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
-3. Data Modeling: Developing fact and dimension tables optimized for analytical queries.
-4. Analytics & Reporting: Creating SQL-based reports and dashboards for actionable insights.
+- **Naming Conventions**: lowercase letters and underscores (_) to separate words.
+- **Language**: Use English for all names.
+- **Avoid Reserved Words**: Do not use SQL reserved words as object names.
 
-## Data Architecture
-The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers: 
+## Table Naming Conventions
 
-![Data Warehouse Architecture](https://github.com/marthag0311/Projects/blob/main/Data%20Engineer%20Projects/Sales%20Data%20Warehouse/docs/data_warehouse_architecture.png)
+### Bronze Rules
 
-1. Bronze Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-2. Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-3. Gold Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.
+- All names must start with the source system name, and table names must match their original names without renaming.
+- `<sourcesystem>_<entity>`
+    - `<sourcesystem>`: Name of the source system (e.g., `crm`, `erp`).
+    - `<entity>`: Exact table name from the source system.
+    - Example: `crm_customer_info` → Customer information from the CRM system.
 
-## Project Requirements
+### Silver Rules
 
-### Building the Data Warehouse (Data Engineering)
+- All names must start with the source system name, and table names must match their original names without renaming.
+- `<sourcesystem>_<entity>`
+    - `<sourcesystem>`: Name of the source system (e.g., `crm`, `erp`).
+    - `<entity>`: Exact table name from the source system.
+    - Example: `crm_customer_info` → Customer information from the CRM system.
 
-#### Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
+### Gold Rules
 
-#### Specifications
+- All names must use meaningful, business-aligned names for tables, starting with the category prefix.
+- `<category>_<entity>`
+    - `<category>`: Describes the role of the table, such as `dim`(dimension) or `fact`(fact table).
+    - `<entity>`: Descriptive name of the table, aligned with the business domain (e.g., `customers`, `products`, `sales`).
+    - Example:
+        - `dim_customers`→ Dimension table for customer data.
+        - `fact_sales` → Fact table containing sales transactions.
 
-- **Data Sources**: Import data from source system (Excel) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine data into a single, user-friendly data model designed for analytical queries.
-- **Scope**: Focus on the entire dataset; historization of data is required.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+#### **Glossary of Category Patterns**
 
-### BI: Analytics & Reporting (Data Analysis)
+| **Pattern** | **Meaning** | **Example**(**s**) |
+| --- | --- | --- |
+| `dim_` | Dimension table | `dim_customer`, `dim_product` |
+| `fact_` | Fact table | `fact_sales` |
+| `report_` | Report table | `report_customers`,`report_sales_monthly` |
 
-#### Objective
-Develop SQL-based analytics to deliver detailed insights into:
+## Column Naming Conventions
 
-- Service Performance
-- Expense Trends
-- Sales Trends
+### Surrogate Keys
 
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.
+- All primary keys in dimension tables must use the suffix `_key`.
+- `<table_name>_key`
+    - <`table_name`>: Refers to the name of the table or entity the key belongs to.
+    - `_key`: A suffix indicating that this column is a surrogate key.
+    - Example: `customer_key` → Surrogate key in the `dim_customers` table.
 
-For more details, refer to [Advanced SQL Sales Analysis](https://github.com/marthag0311/Projects/tree/main/Data%20Analysis%20Projects/Advanced%20SQL%20Sales%20Analytics) and [SQL Sales EDA](https://github.com/marthag0311/Projects/tree/main/Data%20Analysis%20Projects/SQL%20Sales%20Exploratory%20Data%20Analysis%20(EDA)/scripts)
+### Technical Columns
 
-## Repository Structure 
-...
+- All technical columns must start with the prefix `dwh_`, followed by a descriptive name indicating the column’s purpose.
+- `dwh_<column_name>`
+    - `dwh_`: Prefix exclusively for system-generated metadata.
+    - `<column_name>`: Descriptive name indicating the column’s purpose.
+    - Example: `dwh_load_date` → System-generated column used to store the date when the record was loaded.
 
-Important Links & Tools:
-- [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads): Lightweight server for hosting your SQL database.
-- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/ssms/install/install?view=sql-server-ver16): GUI for managing and interacting with databases.
-- [Git Repository](https://github.com/): Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
-- [DrawIO](https://www.drawio.com/): Design data arhitecute, models, flows, and diagram.
-- Notion: Structure project steps, phases, and tasks.
+## Stored Procedure
 
-## 🌟 About Me
-Hi there! I'm Martha Geoffrey Kabakaki. I’m an IT professional!
-
-Let's stay in touch! Feel free to connect with me on the following platforms:
-- [LinkedIn](https://www.linkedin.com/in/martha-geoffrey/)
+- All stored procedures used for loading data must follow the naming pattern:
+- `load_<layer>`
+    - `<layer>`: Represents the layer being loaded, such as `bronze`, `silver`, or, `gold`.
+    - Example:
+        - `load_bronze` → Stored procedure for loading data into Bronze layer.
+        - `load_silver` → Stored procedure for loading data into the Silver layer.

@@ -57,7 +57,7 @@ Important Links & Tools:
 - [DrawIO](https://www.drawio.com/): Design data arhitecute, models, flows, and diagram.
 - Notion: Structure project steps, phases, and tasks.
 
-## 🌟 About Me
+## About Me
 Hi there! I'm Martha Geoffrey Kabakaki. I’m an IT professional!
 
 Let's stay in touch! Feel free to connect with me on the following platforms:

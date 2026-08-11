@@ -38,10 +38,3 @@ The goal was to answer real business questions such as
 ## Tools
 - Microsoft Power BI
 - Git Repository: Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
-
-# About Me
-Hi there! I'm Martha Geoffrey Kabakaki. I’m an IT professional!
-
-Let's stay in touch! Feel free to connect with me on the following platforms:
-
-- [LinkedIn](https://www.linkedin.com/in/martha-geoffrey/)

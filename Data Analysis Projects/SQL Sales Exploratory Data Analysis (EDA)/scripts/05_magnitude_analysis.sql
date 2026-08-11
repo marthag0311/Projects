@@ -27,7 +27,7 @@ from gold.dim_expenses ex
 left join gold.fact_expenses ep
     on ep.exp_key = ex.exp_key
 group by expense_category
-order by total_expenses desc;
+order by total_expense desc;
 
 -- What is the average expense amount in each category?
 select 
@@ -43,8 +43,8 @@ order by avg_expense desc;
 select
     c.category_name,
     count(b.service_key) as total_nr_services
-from gold.dim_service_category c
-left join gold.bridge_service_category b
+from gold.dim_ser_cats c
+left join gold.bridge_ser_cat b
     on b.category_key = c.category_key
 group by category_name
 order by total_nr_services desc;
@@ -62,9 +62,9 @@ order by total_revenue desc;
 -- What is the total salary for each employee
 select
     employee_name,
-    sum(sal.salary_amount) as total_salary
+    sum(sal.wage_amount) as total_wage
 from gold.dim_employees emp
-left join gold.fact_salaries sal
+left join gold.fact_wages sal
     on sal.employee_key = emp.employee_key
 group by employee_name
-order by total_salary desc;
+order by total_wage desc;

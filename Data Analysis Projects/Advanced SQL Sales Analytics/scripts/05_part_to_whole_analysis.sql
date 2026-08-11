@@ -20,7 +20,7 @@ SQL Functions Used:
 ===============================================================================
 */
 
--- Which categories contribute the most to overall expenses.
+-- Which categories contribute the most to overall expense.
 -- Expense categories
 with category_expenses as (
 	select
@@ -39,7 +39,7 @@ select
 from category_expenses
 order by total_expenses desc
 
--- Expense 
+-- which expenses contribute the most to the overall expense
 with expenses as (
 	select
 	ex.expense_name as expense_name,

@@ -22,8 +22,8 @@ order by employee_position;
 select distinct 
     c.category_name, 
     s.[service_name] 
-from gold.dim_service_category c
-left join gold.bridge_service_category b
+from gold.dim_ser_cats c
+left join gold.bridge_ser_cat b
     on c.category_key = b.category_key
 left join gold.dim_services s
     on b.service_key = s.service_key

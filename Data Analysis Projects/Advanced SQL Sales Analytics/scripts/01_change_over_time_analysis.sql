@@ -51,25 +51,25 @@ where dt.[date] is not null
 group by format(dt.[date], 'yyyy-MM')
 order by format(dt.[date], 'yyyy-MM')
 
--- Analyze salary performance over time
+-- Analyze wage performance over time
 -- format()
 select
 	format(dt.[date], 'yyyy-MM') as year_month, -- format MMM returns a string, names of months, and it cannot be sorted correctly and MM returns number of the month.
-	sum(salary_amount) as total_salary
-from gold.fact_salaries sal
+	sum(wage_amount) as total_wage
+from gold.fact_wages sal
 left join gold.dim_date dt
 	on dt.date_key = sal.date_key
 where dt.[date] is not null
 group by format(dt.[date], 'yyyy-MM')
 order by format(dt.[date], 'yyyy-MM')
 
--- Analyze salary performance by employee over time
+-- Analyze wage performance by employee over time
 -- format()
 select
 	format(dt.[date], 'yyyy-MM') as year_month, -- format MMM returns a string, names of months, and it cannot be sorted correctly and MM returns number of the month.
 	emp.employee_name as employee_name,
-	sum(salary_amount) as total_salary
-from gold.fact_salaries sal
+	sum(wage_amount) as total_wage
+from gold.fact_wages sal
 left join gold.dim_date dt
 	on dt.date_key = sal.date_key
 left join gold.dim_employees emp

@@ -56,20 +56,20 @@ from (	-- subquery
 	group by datetrunc(month, dt.[date])
 ) e
 
--- Calculate the total salaries per month 
--- and the running total of salaries over time
+-- Calculate the total wages per month 
+-- and the running total of wages over time
 select 
 	order_date,
-	total_salaries,
-	sum(total_salaries) over (order by order_date) as running_total_salaries, -- PARTITION BY is for each year. It resets for a new year.
-	avg_salaries,
-	avg(avg_salaries) over (order by order_date) as moving_avg_salaries -- PARTITION BY is for each year. It resets for a new year.
+	total_wages,
+	sum(total_wages) over (order by order_date) as running_total_wages, -- PARTITION BY is for each year. It resets for a new year.
+	avg_wages,
+	avg(avg_wages) over (order by order_date) as moving_avg_wages -- PARTITION BY is for each year. It resets for a new year.
 from (	-- subquery
 	select 
 		datetrunc(month, dt.[date]) as order_date,
-		sum(salary_amount) as total_salaries,
-		avg(salary_amount) as avg_salaries
-	from gold.fact_salaries sal
+		sum(wage_amount) as total_wages,
+		avg(wage_amount) as avg_wages
+	from gold.fact_wages sal
 	left join gold.dim_date dt
 		on dt.date_key = sal.date_key
 	where dt.[date] is not null

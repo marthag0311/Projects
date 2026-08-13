@@ -1,0 +1,11 @@
+id, predicted_probability
+test_id_1, 0.55
+test_id_2, 0.30
+test_id_3, 0.75
+test_id_4, 0.45
+test_id_5, 0.83
+test_id_6, 0.12
+test_id_7, 0.41
+test_id_8, 0.98
+test_id_9, 0.61
+test_id_10, 0.22

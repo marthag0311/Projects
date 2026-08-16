@@ -51,11 +51,12 @@ For more details, refer to [Advanced SQL Sales Analysis](https://github.com/mart
 ...
 
 Important Links & Tools:
+
 - [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads): Lightweight server for hosting SQL database.
 - [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/ssms/install/install?view=sql-server-ver16): GUI for managing and interacting with databases.
 - [Git Repository](https://github.com/): Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
 - [DrawIO](https://www.drawio.com/): Design data arhitecute, models, flows, and diagram.
-- Notion: Structure project steps, phases, and tasks.
+- [Notion](https://app.notion.com/p/Steps-Data-Warehouse-Project-36b62eb92c9380a3ab13c577cb90f6aa?source=copy_link): Structure project steps, phases, and tasks.
 
 ## About Me
 Hi there! I'm Martha Geoffrey Kabakaki. I’m an IT professional!

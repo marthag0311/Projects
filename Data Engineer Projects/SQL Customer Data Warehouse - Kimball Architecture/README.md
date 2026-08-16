@@ -1,6 +1,6 @@
-# Data Warehouse and Analytics Project
+# Customer Data Warehouse and Analytics Project
 
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. 
+This project demonstrates the design and developement of a SQL-based customer data warehouse and analytics solution, from centralizing and structuring business data to analyzing customer churn patterns.
 
 ## Project Overview
 
@@ -13,7 +13,7 @@ This project involves:
 
 ## Data Architecture
 
-The data architecture for this project follows Kimball Architecture Stage and Data Mart layers:
+The data architecture for this project follows Kimball Architecture, Stage and Data Mart layers:
 1. Stage Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
 2. Data Mart Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis. Houses business-ready data modeled into a star schema required for reporting and analytics.
 

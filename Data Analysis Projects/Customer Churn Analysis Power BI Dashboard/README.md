@@ -4,10 +4,6 @@ The project focused on building a structured, insight-driven dashboard about:
 
 - Customer Churn Patterns
 
-The goal was to answer real business questions such as
-
-... 
-
 ## Specifications
 
 - Transformed data (new column creation)
@@ -20,10 +16,6 @@ The goal was to answer real business questions such as
 ### Customer Churn Analysis
 
 ![Customer Churn Analysis](https://github.com/marthag0311/Projects/blob/main/Data%20Analysis%20Projects/Customer%20Churn%20Analysis/dashboard/Customer%20Churn%20Analysis.png)
-
-## Insights
-
-...
 
 ## Tools
 - Microsoft Power BI

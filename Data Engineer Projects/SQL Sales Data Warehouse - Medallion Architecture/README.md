@@ -1,4 +1,4 @@
-# Data Warehouse and Analytics Project
+# Sales Data Warehouse and Analytics Project
 
 This project demonstrates the design and development of a SQL-based sales data warehouse and analytics solution, from centralizing and structuring business data to assessing financial performance and generating actionable insights to support decision-making.
 

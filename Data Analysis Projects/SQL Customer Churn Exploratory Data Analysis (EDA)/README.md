@@ -32,6 +32,8 @@ Specifications
 - Scope: Focus on the entire dataset; historization of data is required.
 - Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 
+For more details, refer to [SQL Customer Data Warehouse](https://github.com/marthag0311/Projects/tree/main/Data%20Engineer%20Projects/SQL%20Customer%20Data%20Warehouse%20-%20Kimball%20Architecture).
+
 ### BI: Analytics & Reporting (Data Analysis)
 
 Objective
@@ -41,8 +43,6 @@ Develop SQL-based analytics and a Power BI dashboard to deliver detailed insight
 - Customer Churn Patterns
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
-
-For more details, refer to [Customer Churn Analysis](https://github.com/marthag0311/Projects/tree/main/Data%20Analysis%20Projects/Customer%20Churn%20Analysis) and [SQL Customer Churn EDA](https://github.com/marthag0311/Projects/tree/main/Data%20Analysis%20Projects/SQL%20Customer%20Churn%20Exploratory%20Data%20Analysis%20(EDA)).
 
 ## Repository Structure
 

@@ -1,6 +1,6 @@
 # Data Warehouse and Analytics Project
 
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights.
+This project demonstrates the design and development of a SQL-based sales data warehouse and analytics solution, from centralizing and structuring business data to assessing financial performance and generating actionable insights to support decision-making.
 
 ## Project Overview
 

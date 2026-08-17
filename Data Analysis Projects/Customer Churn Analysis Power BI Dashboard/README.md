@@ -1,8 +1,6 @@
 # Customer Churn Analysis Power BI Dashboard Project
 
-The project focused on building a structured, insight-driven dashboard about:
-
-- Customer Churn Patterns
+This project focused on building a structured, insight-driven dashboard about customer churn patterns.
 
 ## Specifications
 

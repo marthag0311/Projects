@@ -51,6 +51,7 @@ The notebook should include the following stages:
 Models used: Random Forest
 
 4. Performance Evaluation
+
 Evaluate model performance using:
 - ROC Curve
 - AUC Score

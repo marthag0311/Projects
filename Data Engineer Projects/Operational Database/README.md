@@ -26,4 +26,4 @@ The project aims to develop a SQL Server–based relational database that serves
 
 The database is designed using relational database principles (Third Normal Form) to minimize data redundancy and maintain data integrity through primary and foreign key relationships. Although the primary purpose is to support transactional processing (OLTP), the inclusion of a date dimension and inventory snapshot tables also provides a foundation for business intelligence and reporting.
 
-![Physical Data Model](https://github.com/marthag0311/Projects/blob/main/Data%20Engineer%20Projects/Operational%20Database/docs/operational_database_physical%20model.png)
+![Physical Data Model](https://github.com/marthag0311/Projects/blob/main/Data%20Engineer%20Projects/Operational%20Database/docs/operational_database_physical_model.png)

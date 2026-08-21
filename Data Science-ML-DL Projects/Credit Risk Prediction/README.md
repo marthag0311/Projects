@@ -50,9 +50,7 @@ The notebook should include the following stages:
 3. Model Building
 Models used: Random Forest
 
-4. Performance Evaluation
-
-Evaluate model performance using:
+4. Performance Evaluation: Evaluate model performance using:
 - ROC Curve
 - AUC Score
 - Precision-Recall Curve (PR)

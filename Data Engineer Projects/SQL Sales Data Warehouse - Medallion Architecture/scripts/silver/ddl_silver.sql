@@ -5,7 +5,7 @@ DDL Script: Create Silver Tables
 Script Purpose:
     This script creates tables in the 'silver' schema, dropping existing tables 
     if they already exist.
-	  Run this script to re-define the DDL structure of 'bronze' Tables
+	  Run this script to re-define the DDL structure of 'silver' Tables
 ===============================================================================
 */
 
@@ -58,5 +58,5 @@ IF OBJECT_ID ('silver.mapping', 'U') IS NOT NULL
 	DROP TABLE silver.mapping;
 CREATE TABLE silver.mapping (
 old_value VARCHAR(100) PRIMARY KEY,
-new_value VARCHAR(100) NOT NULL
+new_value VARCHAR(100) NOT NULL,
 );

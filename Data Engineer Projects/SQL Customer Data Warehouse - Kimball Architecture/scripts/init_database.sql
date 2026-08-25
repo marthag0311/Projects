@@ -34,6 +34,9 @@ GO
 -- Create Schemas
 CREATE SCHEMA stage;
 GO
+
+CREATE SCHEMA enterprise_data_warehouse;
+GO
   
 CREATE SCHEMA data_mart;
 GO

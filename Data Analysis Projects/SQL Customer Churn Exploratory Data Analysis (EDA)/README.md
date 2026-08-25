@@ -38,7 +38,7 @@ For more details, refer to [SQL Customer Data Warehouse](https://github.com/mart
 
 Objective
 
-Develop SQL-based analytics and a Power BI dashboard to deliver detailed insights into customer churn patterns: [Customer Churn Analysis Power BI Dashboard](https://github.com/marthag0311/Projects/tree/main/Data%20Analysis%20Projects/Customer%20Churn%20Analysis) and [Advanced SQL Customer Churn Analytics](https://github.com/marthag0311/Projects/tree/main/Data%20Analysis%20Projects/Advanced%20SQL%20Customer%20Churn%20Analytics).
+Develop SQL-based analytics and a Power BI dashboard to deliver detailed insights into customer churn patterns: [Customer Churn Analysis Power BI Dashboard](https://github.com/marthag0311/Projects/tree/main/Data%20Analysis%20Projects/Customer%20Churn%20Analysis%20Power%20BI%20Dashboard) and [Advanced SQL Customer Churn Analytics](https://github.com/marthag0311/Projects/tree/main/Data%20Analysis%20Projects/Advanced%20SQL%20Customer%20Churn%20Analytics).
 
 ![Customer Churn Analysis](https://github.com/marthag0311/Projects/blob/main/Data%20Analysis%20Projects/Customer%20Churn%20Analysis%20Power%20BI%20Dashboard/dashboard/Customer%20Churn%20Analysis.png)
 

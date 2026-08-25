@@ -11,7 +11,7 @@ This project focused on building a structured, insight-driven dashboard about cu
 
 ## Dashboard 
 
-### Customer Churn Analysis
+Developed a Power BI Dashboard to deliver detailed insights into customer churn patterns:
 
 ![Customer Churn Analysis](https://github.com/marthag0311/Projects/blob/main/Data%20Analysis%20Projects/Customer%20Churn%20Analysis%20Power%20BI%20Dashboard/dashboard/Customer%20Churn%20Analysis.png)
 

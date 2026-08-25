@@ -39,11 +39,13 @@ For more details, refer to [Sales Data Warehouse](https://github.com/marthag0311
 ### BI: Analytics & Reporting (Data Analysis)
 
 #### Objective
-Develop SQL-based analytics to deliver detailed insights into: [SQL Sales EDA](https://github.com/marthag0311/Projects/tree/main/Data%20Analysis%20Projects/SQL%20Sales%20Exploratory%20Data%20Analysis%20(EDA))
+Develop SQL-based analytics to deliver detailed insights into:
 
 - Service Performance
 - Expense Trends
 - Sales Trends
+
+For more details, refer to [SQL Sales EDA](https://github.com/marthag0311/Projects/tree/main/Data%20Analysis%20Projects/SQL%20Sales%20Exploratory%20Data%20Analysis%20(EDA))
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
 

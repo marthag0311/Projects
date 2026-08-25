@@ -61,5 +61,4 @@ Important Links & Tools:
 ## About Me
 Hi there! I'm Martha Geoffrey Kabakaki. I’m an IT professional!
 
-Let's stay in touch! Feel free to connect with me on the following platforms:
-- [LinkedIn](https://www.linkedin.com/in/martha-geoffrey/)
+Let's stay in touch! Feel free to connect with me on the following platforms: [LinkedIn](https://www.linkedin.com/in/martha-geoffrey/)

@@ -32,6 +32,8 @@ Specifications
 - Scope: Focus on the entire dataset; historization of data is required.
 - Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 
+For more details, refer to [SQL Customer Data Warehouse](https://github.com/marthag0311/Projects/tree/main/Data%20Engineer%20Projects/SQL%20Customer%20Data%20Warehouse%20-%20Kimball%20Architecture).
+
 ### BI: Analytics & Reporting (Data Analysis)
 
 Objective

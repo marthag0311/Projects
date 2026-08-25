@@ -39,7 +39,7 @@ For more details, refer to [Sales Data Warehouse](https://github.com/marthag0311
 ### BI: Analytics & Reporting (Data Analysis)
 
 #### Objective
-Develop SQL-based analytics to deliver detailed insights into:
+Develop SQL-based analytics to deliver detailed insights into: [Advanced SQL Sales Analytics](https://github.com/marthag0311/Projects/tree/main/Data%20Analysis%20Projects/Advanced%20SQL%20Sales%20Analytics)
 
 - Service Performance
 - Expense Trends

@@ -6,16 +6,17 @@ This project demonstrates the design and developement of a SQL-based customer da
 
 This project involves:
 
-1. Data Architecture: Designing a Modern Data Warehouse Using Kimball Architecture.
+1. Data Architecture: Designing a Modern Data Warehouse Using Inmon Architecture.
 2. ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
 3. Data Modeling: Developing fact and dimension tables optimized for analytical queries.
 4. Analytics & Reporting: Creating SQL-based reports and dashboards for actionable insights.
 
 ## Data Architecture
 
-The data architecture for this project follows Kimball Architecture, Stage and Data Mart layers:
+The data architecture for this project follows Inmon Architecture, Stage, Enterprise Data Warehouse, and Data Mart layers:
 1. Stage Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-2. Data Mart Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis. Houses business-ready data modeled into a star schema required for reporting and analytics.
+Enterprise Data Warehouse Layer: Models the data using 3NF. Builds a new integrated data model from the multiple sources. This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
+Data Mart Layer: Takes small subsets of a data warehouse and models them into topic-specific star schemas, a data mart delivers business-ready data optimized specifically for targeted reporting and analytics.
 
 ## Project Requirements
 

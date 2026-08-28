@@ -1,4 +1,4 @@
-# SQL Data Warehouse Project
+# SQL Data Warehouse - Inmon Architecture
 
 ## Project Overview
 

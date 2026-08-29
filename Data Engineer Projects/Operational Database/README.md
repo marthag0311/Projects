@@ -10,7 +10,6 @@ The project aims to develop a SQL Server–based relational database that serves
 - Product pricing with historical price tracking
 - Customer orders and order details
 - Order status tracking
-- Daily inventory snapshots for reporting
 
 ### Project objectives
 
@@ -19,11 +18,10 @@ The project aims to develop a SQL Server–based relational database that serves
 - Record and manage business transactions efficiently.
 - Track inventory movements and stock levels.
 - Maintain historical product pricing.
-- Support operational reporting and future business analytics.
 - Provide a scalable database structure that can be integrated with applications such as Excel, Power BI, or a custom management system.
 
 ### Physical Data Model
 
-The database is designed using relational database principles (Third Normal Form) to minimize data redundancy and maintain data integrity through primary and foreign key relationships. Although the primary purpose is to support transactional processing (OLTP), the inclusion of a date dimension and inventory snapshot tables also provides a foundation for business intelligence and reporting.
+The database is designed using relational database principles (Third Normal Form) to minimize data redundancy and maintain data integrity through primary and foreign key relationships. The primary purpose is to support transactional processing (OLTP).
 
 ![Physical Data Model](https://github.com/marthag0311/Projects/blob/main/Data%20Engineer%20Projects/Operational%20Database/docs/operational_database_physical_model.png)

@@ -224,26 +224,6 @@ CREATE TABLE [MaterialInProduct] (
 GO
 
 -- ======================================================
--- Create Table: Date
--- ======================================================
-CREATE TABLE [Date] (
-    [DateID] int  NOT NULL , --YYYYMMDD
-    [Date] datetime  NOT NULL ,
-    [Day] int  NOT NULL ,
-    [Day_name] varchar(10)  NOT NULL ,
-    [Day_of_week] int  NOT NULL ,
-    [Week] int  NOT NULL ,
-    [Month] int  NOT NULL ,
-    [Month_name] varchar(10) NOT NULL ,
-    [Year] int  NOT NULL ,
-    [Quarter] int  NOT NULL ,
-    CONSTRAINT [PK_Date] PRIMARY KEY CLUSTERED (
-        [DateID]
-    )
-);
-GO
-
--- ======================================================
 -- Create Table: MaterialInventory 
 -- ======================================================
 CREATE TABLE [MaterialInventory] (
@@ -263,26 +243,6 @@ CREATE TABLE [MaterialInventory] (
 GO
 
 -- ======================================================
--- Create Table: MaterialInventorySnapshot
--- ======================================================
-CREATE TABLE [MaterialInventorySnapshot] (
-    [MaterialSnapshotID] int  NOT NULL ,
-    [MaterialID] varchar(10)  NOT NULL ,
-    [DateID] int NOT NULL ,
-    [OpeningQuantity] decimal(10,2)  NOT NULL ,
-    [ClosingQuantity] decimal(10,2)  NOT NULL ,
-    [CreatedAt] datetime NOT NULL ,
-    CONSTRAINT [PK_MaterialInventorySnapshot] PRIMARY KEY CLUSTERED (
-        [MaterialSnapshotID] ASC
-    ),
-    CONSTRAINT [FK_MaterialDailySnapshot_Materials] FOREIGN KEY (MaterialID)
-        REFERENCES [Materials](MaterialID),
-    CONSTRAINT [FK_MaterialInventorySnapshot_Date] FOREIGN KEY (DateID)
-        REFERENCES [Date](DateID)
-);
-GO
-
--- ======================================================
 -- Create Table: ProductInventory 
 -- ======================================================
 CREATE TABLE [ProductInventory] (
@@ -297,26 +257,6 @@ CREATE TABLE [ProductInventory] (
     CONSTRAINT [FK_ProductInventory_Products] FOREIGN KEY (ProductID)
         REFERENCES [Products](ProductID),
     CONSTRAINT [FK_ProductInventory_Date] FOREIGN KEY (DateID)
-        REFERENCES [Date](DateID)
-);
-GO
-
--- ======================================================
--- Create Table: ProductInventorySnapshot
--- ======================================================
-CREATE TABLE [ProductInventorySnapshot] (
-    [ProductSnapshotID] int  NOT NULL ,
-    [ProductID] varchar(10)  NOT NULL ,
-    [DateID] int NOT NULL ,
-    [OpeningQuantity] int  NOT NULL ,
-    [ClosingQuantity] int  NOT NULL ,
-    [CreatedAt] datetime NOT NULL ,
-    CONSTRAINT [PK_ProductInventorySnapshot] PRIMARY KEY CLUSTERED (
-        [ProductSnapshotID] ASC
-    ),
-    CONSTRAINT [FK_ProductInventorySnapshot_Products] FOREIGN KEY (ProductID)
-        REFERENCES [Products](ProductID),
-    CONSTRAINT [FK_ProductInventorySnapshot_Date] FOREIGN KEY (DateID)
         REFERENCES [Date](DateID)
 );
 GO
@@ -366,7 +306,6 @@ CREATE TABLE [OrderLines] (
     [OrderLineID] int NOT NULL ,
     [OrderID] varchar(10)  NOT NULL ,
     [ProductID] varchar(10)  NOT NULL ,
-    [ProductPriceID] int  NOT NULL ,
     [Quantity] int  NOT NULL ,
     [UnitPrice] decimal(10,2) NOT NULL ,
     CONSTRAINT [PK_OrderLine] PRIMARY KEY CLUSTERED (

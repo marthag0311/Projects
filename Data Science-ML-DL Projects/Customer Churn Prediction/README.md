@@ -1,2 +1,2 @@
 # Customer Churn Prediction 
-This porject
+This project focused on predicting customer churn.

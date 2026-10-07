@@ -14,7 +14,7 @@ Usage:
 ===============================================================================
 */
 -- =============================================================================
--- Create Dimension: data_mart.dim_customer_metrics
+-- Create Dimension: data_mart_customer.dim_customer_metrics
 -- =============================================================================
 IF OBJECT_ID('data_mart_customer.fact_customer_metrics', 'V') IS NOT NULL
     DROP VIEW data_mart_customer.fact_customer_metrics;
@@ -41,7 +41,7 @@ FROM enterprise_data_warehouse.customer_metrics
 GO
 
 -- =============================================================================
--- Create Dimension: data_mart.dim_demographics
+-- Create Dimension: data_mart_customer.dim_demographics
 -- =============================================================================
 IF OBJECT_ID('data_mart_customer.dim_demographics', 'V') IS NOT NULL
     DROP VIEW data_mart_customer.dim_demographics;
@@ -64,7 +64,7 @@ FROM enterprise_data_warehouse.demographics
 GO
 
 -- =============================================================================
--- Create Dimension: data_mart.dim_account
+-- Create Dimension: data_mart_customer.dim_account
 -- =============================================================================
 IF OBJECT_ID('data_mart_customer.dim_account', 'V') IS NOT NULL
     DROP VIEW data_mart_customer.dim_account;
@@ -89,7 +89,7 @@ FROM enterprise_data_warehouse.account
 GO
 
 -- =============================================================================
--- Create Dimension: data_mart.dim_status
+-- Create Dimension: data_mart_customer.dim_status
 -- =============================================================================
 IF OBJECT_ID('data_mart_customer.dim_status', 'V') IS NOT NULL
     DROP VIEW data_mart_customer.dim_status;
@@ -111,7 +111,7 @@ FROM enterprise_data_warehouse.[status]
 GO
 
 -- =============================================================================
--- Create Dimension: data_mart.dim_services
+-- Create Dimension: data_mart_customer.dim_services
 -- =============================================================================
 IF OBJECT_ID('data_mart_customer.dim_services', 'V') IS NOT NULL
     DROP VIEW data_mart_customer.dim_services;

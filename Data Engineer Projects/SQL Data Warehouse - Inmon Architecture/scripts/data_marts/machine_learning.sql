@@ -1,8 +1,8 @@
-IF OBJECT_ID('data_mart_customer.machine_learning', 'V') IS NOT NULL
-    DROP VIEW data_mart_customer.machine_learning;
+IF OBJECT_ID('data_mart_customer.machine_learning_churn', 'V') IS NOT NULL
+    DROP VIEW data_mart_customer.machine_learning_churn;
 GO
 
-CREATE VIEW data_mart_customer.machine_learning AS 
+CREATE VIEW data_mart_customer.machine_learning_churn AS 
 SELECT 
     f.customer_id as customer_id,
     f.number_of_referrals,
@@ -53,3 +53,4 @@ LEFT JOIN data_mart_customer.dim_status sta
     ON f.customer_id = sta.customer_id
 LEFT JOIN data_mart_customer.dim_services ser
     ON f.customer_id = ser.customer_id 
+WHERE customer_status in ('Churned', 'Stayed')
